@@ -1,8 +1,9 @@
 # phpenv_f34
+PHP 7.2.34 / 7.4.20
 on my Fedory 34 laptop I install some packages to get php 7.4 compiled:
 
 ```bash
- dnf install \
+ sudo dnf install \
  libxml2-devel \
  sqlite3 \
  sqlite-devel \
@@ -16,7 +17,21 @@ on my Fedory 34 laptop I install some packages to get php 7.4 compiled:
  libtidy-devel \
  libxslt-devel \
  libzio-devel \
- libzip-devel
+ libzip-devel \
+ php-devel \
+ php-pear \
+ ibdb-devel \
+ libcurl4-openssl-devel \
+ libXpm-devel \
+ libmysqlclient-devel \
+ libpq-devel \
+ libfreetype6-devel \
+ libfreetype-devel \
+ freetype-devel \
+ libldb-dev \
+ libldb-devel
+
+ sudo pecl install xdebug
 ```
 
 
