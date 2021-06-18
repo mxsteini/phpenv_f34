@@ -32,6 +32,10 @@ on my Fedory 34 laptop I install some packages to get php 7.4 compiled:
  libldb-devel
 
  sudo pecl install xdebug
+ 
 ```
-
-
+# install redis for version
+```bash
+export version=7.4.20
+pecl install -R ~/.phpenv/versions/${version}/lib/php/extensions -o -f redix
+```
