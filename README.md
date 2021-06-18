@@ -37,5 +37,6 @@ on my Fedory 34 laptop I install some packages to get php 7.4 compiled:
 # install redis for version
 ```bash
 export version=7.4.20
-pecl install -R ~/.phpenv/versions/${version}/lib/php/extensions -o -f redix
+pecl install -R ~/.phpenv/versions/${version}/lib/php/extensions -o -f redis
+echo "extension=redis" > ~/.phpenv/versions/${version}/etc/conf.d/redis.ini
 ```
