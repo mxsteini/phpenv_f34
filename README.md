@@ -23,11 +23,8 @@ on my Fedory 34 laptop I install some packages to get php 7.4 compiled:
  libXpm-devel \
  libmysqlclient-devel \
  libpq-devel \
- libfreetype6-devel \
- libfreetype-devel \
  freetype-devel \
- libldb-dev \
- libldb-devel
+ libdb-devel
 
  sudo pecl install xdebug
  
