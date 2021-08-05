@@ -16,11 +16,10 @@ on my Fedory 34 laptop I install some packages to get php 7.4 compiled:
  readline-devel \
  libtidy-devel \
  libxslt-devel \
- libzio-devel \
  libzip-devel \
  php-devel \
  php-pear \
- ibdb-devel \
+ libdb-devel \
  libcurl4-openssl-devel \
  libXpm-devel \
  libmysqlclient-devel \
