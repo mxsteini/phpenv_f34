@@ -5,7 +5,6 @@ on my Fedory 34 laptop I install some packages to get php 7.4 compiled:
 ```bash
  sudo dnf install \
  libxml2-devel \
- sqlite3 \
  sqlite-devel \
  bzip2-devel \
  libcurl-devel \
