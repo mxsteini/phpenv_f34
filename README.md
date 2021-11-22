@@ -33,11 +33,15 @@ on my Fedory 35 laptop I install some packages to get php 7.4 compiled:
 ```bash
 export version=7.2.34
 phpenv install ${version}
+phpenv local ${version}
 pecl install -R ~/.phpenv/versions/${version}/lib/php/extensions -o -f redis
 echo "extension=redis" > ~/.phpenv/versions/${version}/etc/conf.d/redis.ini
+pecl install -R ~/.phpenv/versions/${version}/lib/php/extensions -o -f apcu_bc
+echo "extension=redis" > ~/.phpenv/versions/${version}/etc/conf.d/apcu.ini
 
 export version=7.4.20
 phpenv install ${version}
+phpenv local ${version}
 pecl install -R ~/.phpenv/versions/${version}/lib/php/extensions -o -f redis
 echo "extension=redis" > ~/.phpenv/versions/${version}/etc/conf.d/redis.ini
 ```
