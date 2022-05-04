@@ -43,5 +43,5 @@ export version=7.4.20
 phpenv install ${version}
 phpenv local ${version}
 pecl install -R ~/.phpenv/versions/${version}/lib/php/extensions -o -f redis
-echo "extension=redis" > ~/.phpenv/versions/${version}/etc/conf.d/redis.ini
+echo "extension=apcu" > ~/.phpenv/versions/${version}/etc/conf.d/redis.ini
 ```
